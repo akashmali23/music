@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify - on the go</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Musify">Musify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div class="songitemcontainer">
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="1" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="2" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="3" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="4" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="5" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="6" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="./cover/cover1.jpg" alt="1">
+                    <SPAN class="songname"> Let me Love You</SPAN>
+                    <span class="songlistplay"><span class="timestamp"> <i id="7" class="fa-solid songitemplay fa-play"
+                                style="color: #5ff7b0;"></i></span></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <div class="rangetime">
+            <span id="currenttime">0:00</span>
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <span id="endtime">0:00</span>
+        </div>
+        <div class="icons">
+            <!-- <span id="currenttime">0:00</span> -->
+            <i id="previous" class="fa-solid fa-2x fa-backward" style="color: #5ff7b0;"></i>
+            <i class="fa-solid fa-2x fa-play" style="color: #5ff7b0;" id="masterplay"></i>
+            <i id="next" class="fa-solid fa-2x fa-forward" style="color: #5ff7b0;"></i>
+            <i class="fa-solid fa-volume-high" id="volumebutton"></i>
+            <input type="range" min="0" max="100" id="vol" value="100">
+            <!-- <span id="endtime">0:00</span> -->
+        </div>
+        <div class="songinfo">
+            <img src="gif.gif" width="42px" alt="" id="gif"> <span id="mastersongname"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
